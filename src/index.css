@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Giving Plate Design System - Velvet Sunset Theme
+Elegant, modern gradient design with rich purples and warm accents
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - soft cream background */
+    --background: 35 100% 98%;
+    --foreground: 312 41% 17%;
+
+    /* Card & surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 312 41% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 312 41% 17%;
+
+    /* Primary - Rich velvet purple */
+    --primary: 327 37% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 327 50% 60%;
+
+    /* Secondary - Warm peach accent */
+    --secondary: 35 100% 82%;
+    --secondary-foreground: 312 41% 17%;
+
+    /* Muted - Soft neutral tones */
+    --muted: 35 20% 94%;
+    --muted-foreground: 312 20% 45%;
+
+    /* Accent - Deep velvet */
+    --accent: 312 41% 22%;
+    --accent-foreground: 35 100% 82%;
+
+    /* Destructive - Soft red for urgency */
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & inputs */
+    --border: 327 15% 85%;
+    --input: 327 10% 90%;
+    --ring: 327 37% 50%;
+
+    /* Success - Emerald green */
+    --success: 140 50% 55%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Golden amber */
+    --warning: 45 90% 60%;
+    --warning-foreground: 312 41% 17%;
+
+    /* Velvet Sunset Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(312 41% 17%), hsl(327 37% 50%), hsl(35 100% 82%));
+    --gradient-secondary: linear-gradient(135deg, hsl(327 37% 50%), hsl(35 100% 82%));
+    --gradient-hero: linear-gradient(135deg, hsl(312 41% 17% / 0.9), hsl(327 37% 50% / 0.8), hsl(35 100% 82% / 0.6));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(35 20% 97%));
+    --gradient-accent: linear-gradient(135deg, hsl(327 50% 60%), hsl(35 100% 85%));
+
+    /* Elegant shadows with velvet tones */
+    --shadow-warm: 0 10px 30px -10px hsl(327 37% 50% / 0.3);
+    --shadow-gentle: 0 4px 20px -8px hsl(312 41% 17% / 0.1);
+    --shadow-card: 0 2px 15px -5px hsl(312 41% 17% / 0.08);
+    --shadow-velvet: 0 20px 50px -15px hsl(327 37% 50% / 0.4);
+
+    /* Animation & transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with velvet undertones */
+    --background: 312 41% 8%;
+    --foreground: 35 40% 92%;
+
+    --card: 312 41% 10%;
+    --card-foreground: 35 40% 92%;
+
+    --popover: 312 41% 10%;
+    --popover-foreground: 35 40% 92%;
+
+    --primary: 327 37% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 327 50% 60%;
+
+    --secondary: 35 100% 82%;
+    --secondary-foreground: 312 41% 17%;
+
+    --muted: 312 20% 15%;
+    --muted-foreground: 35 20% 70%;
+
+    --accent: 312 30% 20%;
+    --accent-foreground: 35 40% 92%;
+
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 312 20% 20%;
+    --input: 312 15% 18%;
+    --ring: 327 37% 50%;
+
+    --success: 140 50% 55%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 90% 60%;
+    --warning-foreground: 312 41% 17%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(312 41% 17%), hsl(327 37% 50%), hsl(35 100% 82%));
+    --gradient-secondary: linear-gradient(135deg, hsl(327 37% 50%), hsl(35 100% 82%));
+    --gradient-hero: linear-gradient(135deg, hsl(312 41% 17% / 0.9), hsl(327 37% 50% / 0.8), hsl(35 100% 82% / 0.6));
+    --gradient-card: linear-gradient(180deg, hsl(312 41% 10%), hsl(312 30% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(327 50% 60%), hsl(35 100% 85%));
+
+    --shadow-warm: 0 10px 30px -10px hsl(327 37% 50% / 0.4);
+    --shadow-gentle: 0 4px 20px -8px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 2px 15px -5px hsl(0 0% 0% / 0.2);
+    --shadow-velvet: 0 20px 50px -15px hsl(327 37% 50% / 0.5);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom utility classes for Giving Plate */
+@layer utilities {
+  /* Hero text gradient */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Warm glow effect for CTAs */
+  .btn-glow {
+    box-shadow: var(--shadow-warm);
+    transition: var(--transition-smooth);
+  }
+
+  .btn-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px -15px hsl(var(--primary) / 0.4);
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-gentle);
+  }
+
+  /* Pulse animation for urgency */
+  .pulse-warm {
+    animation: pulse-warm 2s infinite;
+  }
+
+  @keyframes pulse-warm {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  /* Impact number animation */
+  .count-up {
+    animation: count-up 1s ease-out;
+  }
+
+  @keyframes count-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
