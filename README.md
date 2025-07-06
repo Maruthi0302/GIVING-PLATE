@@ -33,9 +33,6 @@ India wastes **over 70 million tonnes of food annually**, while millions go to b
 - 📏 Uses haversine distance for proximity
 - 🧮 Ranks NGOs based on capacity match, diet type, and freshness
 
-### 📸 Food Image Classification *(Optional)*
-- Upload a food image → AI classifies the food type
-- Helps receivers prepare properly or filter preferences
 
 ### 📈 Impact Analytics
 - Meals saved
@@ -146,17 +143,6 @@ def match_score(food, ngo):
 🤝 Empowering NGOs and volunteers with real-time tools
 
 🌍 Environmental benefits from waste reduction & carbon savings
-
-🛠️ Future Enhancements
-WhatsApp & SMS bot for donor onboarding
-
-Volunteer delivery route optimization
-
-Real-time alerts for high-urgency items
-
-Multilingual UI
-
-Impact badges for frequent donors
 
 🤝 Contributing
 We welcome contributors to join this mission-driven project.
