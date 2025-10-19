@@ -2,6 +2,10 @@
 
 > A socially impactful, AI-powered platform connecting surplus food providers with orphanages, NGOs, and old-age homes — aiming to eliminate food waste and end hunger in India.
 
+## 🖥️ Live Demo
+
+[🚀 View Demo](https://giving-plate.vercel.app/)  
+
 ---
 
 ## 📌 Problem
@@ -43,13 +47,6 @@ India wastes **over 70 million tonnes of food annually**, while millions go to b
 ### 🤖 Chatbot Integration
 - AI chatbot (Gemini/OpenAI/Rasa) to accept donations via natural language:
   > “I have 10 plates of biryani in Hyderabad ready for pickup by 4PM.”
-
-
----
-
-## 🖥️ Live Demo
-
-[🚀 View Demo](https://giving-plate.vercel.app/)  
 
 ---
 
