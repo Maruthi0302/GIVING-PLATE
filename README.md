@@ -51,8 +51,7 @@ India wastes **over 70 million tonnes of food annually**, while millions go to b
 
 ## 🖥️ Live Demo
 
-[🚀 View Demo](https://givingplate.vercel.app)  
-_(Demo URL will go here once deployed)_
+[🚀 View Demo](https://giving-plate.vercel.app/)  
 
 ---
 
