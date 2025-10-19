@@ -40,12 +40,10 @@ India wastes **over 70 million tonnes of food annually**, while millions go to b
 - Environmental footprint (CO₂ saved)
 - Live donation map
 
-### 🤖 Chatbot Integration *(Optional)*
+### 🤖 Chatbot Integration
 - AI chatbot (Gemini/OpenAI/Rasa) to accept donations via natural language:
   > “I have 10 plates of biryani in Hyderabad ready for pickup by 4PM.”
 
-### 🧪 Demand Prediction *(Optional)*
-- NGO need forecasting using time-series modeling (ARIMA/ML)
 
 ---
 
